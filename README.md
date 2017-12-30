@@ -27,7 +27,7 @@ While our first airdrop was held as a lottery to give owners of smaller wallets 
 I received fewer Hydras than expected
 =====================================
 
-If you find an address is credited with fewer Hydras than expected, please remember that your wallet generates change addresses everytime you send a transaction. Depending on their balance during the snapshot phases, these addresses might also be eligible. You can get a list of all addresses in your wallet--including change addresses--by running `listaddressgroupings` in the console found in your IoP Core Wallet under *Help->Debug Window->Console*. To find out which of these is eligible for registration, you can compare them against the snapshot data [here](src/data/snapshots.json). 
+If you find an address is credited with fewer Hydras than expected, please remember that your wallet generates change addresses everytime you send a transaction. See also [this article](https://iop.global/change-addresses/) for more information. Depending on their balance during the snapshot phases, these addresses might also be eligible. You can get a list of all addresses in your wallet--including change addresses--by running `listaddressgroupings` in the console found in your IoP Core Wallet under *Help->Debug Window->Console*. To find out which of these is eligible for registration, you can compare them against the snapshot data [here](src/data/snapshots.json). 
 Registration will be open until Monday, January 14, 2:00 PM UTC. After registration closes, we will update this repository with the full registration data. 
 
 
