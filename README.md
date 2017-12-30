@@ -62,7 +62,7 @@ If you still have questions, you should be able to find the answers here.
 **A**: No, you cannot receive Hydra tokens based on Bittrex holdings. Only IOP addresses for which you own the private keys are eligible to register for the lottery.
 
 **Q**: What do I need to register my address?
-**A**: You’ll need an eligible IOP address, an Ethereum wallet address for a wallet supporting ERC20 tokens and an IOP wallet capable of signing a message using the private key for the eligible IOP address. The official IoP Core wallet is perfect for this, exchange addresses are NOT.
+**A**: You’ll need an eligible IOP address, an Ethereum wallet address for a wallet supporting ERC20 tokens and an IOP wallet capable of signing a message using the private key for the eligible IOP address. The official IoP Core wallet is perfect for this, exchange addresses are NOT. Another possibility is to use the Coinomi Wallet.
 
 **Q**: Which wallets support ERC20 tokens?
 **A**: There are several options, but we recommend MyEtherWallet.com. We have created a short instruction video explaining how to set up a wallet address in MEW.
