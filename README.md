@@ -27,7 +27,7 @@ While our first airdrop was held as a lottery to give owners of smaller wallets 
 I received fewer Hydras than expected
 =====================================
 
-If you find an address is credited with fewer Hydras than expected, please remember that your wallet generates change addresses everytime you send a transaction. See also [this article](https://iop.global/change-addresses/) for more information. Depending on their balance during the snapshot phases, these addresses might also be eligible. You can get a list of all addresses in your wallet--including change addresses--by running `listaddressgroupings` in the console found in your IoP Core Wallet under *Help->Debug Window->Console*. To find out which of these is eligible for registration, you can compare them against the snapshot data [here](src/data/snapshots.json). 
+If you find an address is credited with fewer Hydras than expected, please remember that your wallet generates change addresses everytime you send a transaction. See also [this article](https://iop.global/change-addresses/) for more information. Depending on their balance during the snapshot phases, these addresses might also be eligible. You can get a list of all addresses in your wallet--including change addresses--by running `listaddressgroupings` in the console found in your IoP Core Wallet under *Help->Debug Window->Console*. To find out which of these is eligible for registration, you can compare them against the snapshot data [here](src/data/snapshots.json) (No data yet, stay tuned). 
 Registration will be open until Monday, January 14, 2:00 PM UTC. After registration closes, we will update this repository with the full registration data. 
 
 
@@ -60,6 +60,17 @@ If you still have questions, you should be able to find the answers here.
 
 **Q**: Can I receive Hydra from my IOP on Bittrex?
 **A**: No, you cannot receive Hydra tokens based on Bittrex holdings. Only IOP addresses for which you own the private keys are eligible to register for the lottery.
+
+**Q**: What are the important dates for this airdrop?
+**A**: 
+- From December 25 to December 31: Snapshots for round 1, always at the first block after midnight UTC.
+- From January 1 to January 7: Snapshots for round 2, always at the first block after midnight UTC. 
+- January 2: Release of the snapshot results for round 1. You can start to compare your addresses.
+- From January 7 to January 14: Register your addresses with the bot in our official [Telegram Channel]((https://t.me/IoPofficial).
+- January 14: Release of the snapshot results for round 2. Full mathematical details on the distribution function for transparency.
+- After January 14: Hydras will be sent out to all registered participants.
+
+
 
 **Q**: What do I need to register my address?
 **A**: You’ll need an eligible IOP address, an Ethereum wallet address for a wallet supporting ERC20 tokens and an IOP wallet capable of signing a message using the private key for the eligible IOP address. The official IoP Core wallet is perfect for this, exchange addresses are NOT. Another possibility is to use the Coinomi Wallet.
