@@ -53,7 +53,7 @@ If you still have questions, you should be able to find the answers here.
 **A**: 500,000 Hydra tokens are being distributed in this airdrop.
 
 **Q**: Is everyone eligible to receive free Hydra tokens?
-**A**: No, only IOP addresses containing a minimum of 1 IOP for at least 4 of the 7 snapshots per round are eligible to receive Tokens in this airdrop. The requirements for participation will change for each airdrop.
+**A**: No, only IOP addresses containing more than 1 IOP for at least 4 of the 7 snapshots per round are eligible to receive Tokens in this airdrop. The requirements for participation will change for each airdrop.
 
 **Q**: Will every eligible address receive free Hydra tokens?
 **A**: Yes. The minimum amount will be given here the moment it is known.
@@ -66,8 +66,8 @@ If you still have questions, you should be able to find the answers here.
 - From December 25 to December 31: Snapshots for round 1, always at the first block after midnight UTC.
 - From January 1 to January 7: Snapshots for round 2, always at the first block after midnight UTC. 
 - January 2: Release of the snapshot results for round 1. You can start to compare your addresses.
+- January 7: Release of the snapshot results for round 2. Full mathematical details on the distribution function for transparency.
 - From January 7 to January 14: Register your addresses with the bot in our official [Telegram Channel](https://t.me/IoPofficial) (starting and closing at 2 PM UTC, respectively).
-- January 14: Release of the snapshot results for round 2. Full mathematical details on the distribution function for transparency.
 - After January 14: Hydras will be sent out to all registered participants.
 
 
