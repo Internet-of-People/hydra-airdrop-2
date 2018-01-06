@@ -5,19 +5,19 @@ delete Web3;
 var client = new (require("bitcoin")).Client({
     host: "localhost",
     port: 8337,
-    user: "USERNAME",
-    pass: "PASSWORD"
+    user: "USER",
+    pass: "PASS"
 });
 
 var mysql = require("mysql").createConnection({
   host: "localhost",
-  user: "USERNAME",
-  password: "PASSWORD",
-  database: "DATABASE"
+  user: "USER",
+  password: "PASS",
+  database: "DB"
 });
 mysql.connect();
 
-var data = JSON.parse(require("fs").readFileSync("../data/snapshot.json"));
+var data = JSON.parse(require("fs").readFileSync("./airdrops.json"));
 
 var express = require("express")();
 express.use(require("body-parser").json());
@@ -28,13 +28,14 @@ express.post("/register", async (req, res) => {
         return;
     }
 
-    if (!(data[req.body.iop])) {
+
+    if (Object.keys(data).indexOf(req.body.iop) === -1) {
         res.status(400);
-        res.end("That IoP address isn't on the list of IoP addresses eligible for this airdrop. Sorry.");
+        res.end("That IoP address isn't on the list of IoP addresses eligible for these airdrops. Sorry.");
         return;
     }
 
-    client.verifyMessage(req.body.iop, req.body.sig, req.body.eth, async (err, valid, resHeaders) => {
+    client.verifyMessage(""+req.body.iop, ""+req.body.sig, ""+req.body.eth, async (err, valid, resHeaders) => {
         if (valid) {
             mysql.query("SELECT * FROM TABLE WHERE iop=?", [req.body.iop], async (err2, res2, info) => {
                 if (res2.length !== 0) {
@@ -42,9 +43,12 @@ express.post("/register", async (req, res) => {
                     res.end("You have already registered.");
                     return;
                 }
+
                 res.status(200);
-                res.end("You have successfully registered! You have " + Math.min(Math.floor(data[req.body.iop]/2), 250) + " tickets!");
-                mysql.query("INSERT INTO TABLE VALUES (?, ?, ?)", [req.body.iop, req.body.eth, req.body.sig], async (err)=>{});
+                res.end("You have successfully registered! " +
+                    "You have recived " + (data[req.body.iop][0] ? data[req.body.iop][0] : 0) + " Hydra in the first airdrop, " +
+                    "and " + (data[req.body.iop][1] ? data[req.body.iop][1] : 0) + " Hydra in the second!");
+                mysql.query("INSERT INTO TABLE VALUES (?, ?, ?)", [req.body.iop, req.body.eth, req.body.sig], async (err)=>{console.log(err);});
             });
         } else {
             res.status(400);
