@@ -7,7 +7,8 @@ To compile it:
 - Download this folder and `cd` into it.
 - Get all the dependencies in jar format (Apache HttpCore, HttpClient, and Apache Commons Codec/Logging):
 
-`commons-codec-1.10.jar
+```
+commons-codec-1.10.jar
 
 commons-codec-1.11.jar
 
@@ -31,7 +32,8 @@ httpmime-4.5.4.jar
 
 jna-4.4.0.jar
 
-jna-platform-4.4.0.jar`
+jna-platform-4.4.0.jar
+```
 
 - `javac -cp ./* ./ClaimAirdrop.java`
 - Extract the contents of every jar to that folder.
