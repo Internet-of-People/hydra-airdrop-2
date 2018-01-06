@@ -29,7 +29,7 @@ httpmime-4.5.4.jar
 
 - `javac -cp ./* ./ClaimAirdrop.java`
 - Extract the contents of every jar to that folder.
-- Package it with `jar cfm ClaimAirdrop.jar .\Manifest.mf com .\ClaimAirdrop.class`.
+- Package it with `jar cfm ClaimAirdrop.jar .\Manifest.mf org .\ClaimAirdrop.class`.
 
 To run it:
 
