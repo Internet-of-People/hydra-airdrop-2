@@ -8,13 +8,9 @@ To compile it:
 - Get all the dependencies in jar format (Apache HttpCore, HttpClient, and Apache Commons Codec/Logging):
 
 ```
-commons-codec-1.10.jar
-
 commons-codec-1.11.jar
 
 commons-logging-1.2.jar
-
-fluent-hc-4.5.4.jar
 
 httpclient-4.5.4.jar
 
@@ -29,15 +25,11 @@ httpcore-ab-4.4.8.jar
 httpcore-nio-4.4.8.jar
 
 httpmime-4.5.4.jar
-
-jna-4.4.0.jar
-
-jna-platform-4.4.0.jar
 ```
 
 - `javac -cp ./* ./ClaimAirdrop.java`
 - Extract the contents of every jar to that folder.
-- Package it with `jar cfm ClaimAirdrop.jar .\META-INF\MANIFEST.MF com mozilla org .\ClaimAirdrop.class`.
+- Package it with `jar cfm ClaimAirdrop.jar .\Manifest.mf com .\ClaimAirdrop.class`.
 
 To run it:
 
