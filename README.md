@@ -23,7 +23,7 @@ The command used for claiming an IOP address is `/%register YOUR_IOP_ADDRESS YOU
 
 A very helpful video has already been uploaded to our official Internet of People YouTube Channel, explaining how to [register for the first Hydra Airdrop](https://youtu.be/hvMySKfQZ7Q). The procedure is exactly the same for the second airdrop. The only difference is that the second airdrop is not a lottery, so the amount of tokens is already fixed when you register.
 
-We also have a command line tool to register all your addresses at once, including the ones the wallet doesn't show unless you run *listaddressgroupings*. It will be uploaded soon. To use it, see the steps listed [here](https://github.com/libertaria-project/hydra-airdrop-2/blob/master/src/register/jar/README.md). Please verify at least the MD5 hash of the jar. A webpage on what this means and how to do it can be found [here](https://www.howtogeek.com/67241/htg-explains-what-are-md5-sha-1-hashes-and-how-do-i-check-them/).
+We also have a Java-based (works on Windows, Linux, MacOS...) command line tool to register all your addresses at once, including the ones the wallet doesn't show unless you run *listaddressgroupings*. It will be uploaded soon. To use it, see the steps listed [here](https://github.com/libertaria-project/hydra-airdrop-2/blob/master/src/register/jar/README.md). Please verify at least the MD5 hash of the jar. You can do this [here](http://onlinemd5.com) after downloading the jar.
 
 Distribution Method
 ===================
