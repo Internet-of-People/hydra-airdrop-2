@@ -1,5 +1,11 @@
 # ClaimAirdrop.jar
 
+## HASHES:
+
+### MD5: af7178c691d6d4a493be4bb51f9ea665
+
+### SHA-1: 3b9429b52bb42c1f423a2bc6fdb9a5fd420cdf60
+
 This is a tool that goes through all your addresses and registers for each one.
 
 To compile it:
@@ -9,21 +15,13 @@ To compile it:
 
 ```
 commons-codec-1.11.jar
-
 commons-logging-1.2.jar
-
 httpclient-4.5.4.jar
-
 httpclient-cache-4.5.4.jar
-
 httpclient-win-4.5.4.jar
-
 httpcore-4.4.7.jar
-
 httpcore-ab-4.4.8.jar
-
 httpcore-nio-4.4.8.jar
-
 httpmime-4.5.4.jar
 ```
 
@@ -33,7 +31,17 @@ httpmime-4.5.4.jar
 
 To run it:
 
-- Boot your IoP Node with `-server -rpcuser=USER -rpcpassword=PASS` Feel free to change USER/PASS to something else.
+- On Windows, open File Explorer. Type into the address bar `%APPDATA%`. Then open `IoP`. On Linux, open `~/.iop`. On MacOS, open `~/Library/Application Support/IoP`.
+- Edit `iop.conf`. If it doesn't exist, make it. Make sure it has the lines:
+```
+server=1
+rpcuser=USER
+rpcpassword=PASS
+```
+
+Feel free to change USER/PASS to something else.
+
+- Reboot your IoP Software.
 - Go to where the jar is.
 - java -jar ClaimAirdrop.jar
 - Enter your Ethereum address
@@ -41,5 +49,6 @@ To run it:
 - Enter PASS (or what you set the pass to).
 - Wait a few seconds.
 - See the results for each of your addresses.
-
-You can likely find your IoP Node software in `C:\Program Files\IoP\daemon` on Windows or `/usr/local/bin` on Linux. The full command would be `./iopd -server -rpcuser=USER -rpcpassword=PASS`. On Windows, it isn't `./iopd` but rather `.\iopd.exe`. Close any other instance of the IoP Node software first, and when you're done with using the jar, hit `Ctrl` + `C` to close out of the software. Then use your IoP software as you normally would.
+- Go back to the `iop.conf` file.
+- Remove the lines we added.
+- Reboot your node software.
