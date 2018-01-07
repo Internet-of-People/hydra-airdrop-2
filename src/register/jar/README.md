@@ -22,7 +22,7 @@ Feel free to change USER/PASS to something else.
 
 - Reboot your IoP Software.
 - Go to where the jar is.
-- java -jar ClaimAirdrop.jar
+- `java -jar ClaimAirdrop.jar`
 - Enter your Ethereum address
 - Enter USER (or what you set the user to).
 - Enter PASS (or what you set the pass to).
