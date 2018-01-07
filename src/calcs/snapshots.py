@@ -78,6 +78,7 @@ for addr, balances in balances_sorted.items():
     if eligible > minIOP: # need _more_ than 1 IOP to participate
         balances_eligible[ addr ] = eligible
 
+print("{} addresses took part in this round of the airdrop.".format(len(balances_eligible)))
 
 print("Writing chronological balances to JSON... {}".format(balances_chonological_file))
 with open(balances_chonological_file, 'w') as outfile:
