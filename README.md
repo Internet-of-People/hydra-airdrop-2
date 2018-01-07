@@ -1,11 +1,11 @@
 Second Hydra Airdrop
 ====================
 
-**UPDATE** - All snapshots and distribution calculations added. The registration will open tonight at approximately 7 PM UTC.
+**UPDATE** - All snapshots and distribution calculations added. The registration will open tonight at approximately 7 PM UTC. We will keep registration open for a week, so everyone has plenty of time to claim their tokens.
 
 Dear IOP Community,
 
-Initially we planned to open registration for the second airdrop of Hydra tokens on Monday, January 1, 2:00 PM UTC. Due to the large amount of new members during the Christmas period and the increased demand for another airdrop, we have decided to extend this airdrop by adding a second round. The rewards for both rounds can be claimed together on January 7, 2:00 PM UTC. 
+Initially we planned to open registration for the second airdrop of Hydra tokens on Monday, January 1, 2:00 PM UTC. Due to the large amount of new members during the Christmas period and the increased demand for another airdrop, we have decided to extend this airdrop by adding a second round. The rewards for both rounds can be claimed together starting on January 7, 7:00 PM UTC. 
 
 The first round began with the first block after midnight on December 25 (UTC) and ended with the first block after midnight on December 31. The second round began with the first block after midnight on January 1 (UTC) and ended with the first block after midnight on January 7.
 
