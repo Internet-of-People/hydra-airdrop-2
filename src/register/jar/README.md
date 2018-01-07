@@ -21,7 +21,7 @@ rpcpassword=PASS
 Feel free to change USER/PASS to something else.
 
 - Reboot your IoP Software.
-- Download the file `ClaimAirdrop.jar` from this page.
+- Download the file `ClaimAirdrop.jar` [here](https://github.com/libertaria-project/hydra-airdrop-2/raw/master/src/register/jar/ClaimAirdrop.jar).
 - Go to where the jar is.
 - `java -jar ClaimAirdrop.jar`
 - Enter your Ethereum address
