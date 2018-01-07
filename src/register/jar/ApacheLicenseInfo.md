@@ -1,4 +1,4 @@
-The jar file includes compiled libraries that are licensed under the Apache 2.0 license. The files on GitHub, and their compiled versions also included in the jar, aren't.
+The jar file includes compiled libraries that are licensed under the Apache 2.0 license. The files on GitHub, and their compiled versions also included in the jar, are under the GNU GPL v3.0 License.
 
 ```
 Licensed under the Apache License, Version 2.0 (the "License");
