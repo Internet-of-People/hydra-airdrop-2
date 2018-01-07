@@ -21,6 +21,7 @@ rpcpassword=PASS
 Feel free to change USER/PASS to something else.
 
 - Reboot your IoP Software.
+- Download the file `ClaimAirdrop.jar` from this page.
 - Go to where the jar is.
 - `java -jar ClaimAirdrop.jar`
 - Enter your Ethereum address
