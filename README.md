@@ -1,9 +1,9 @@
 Second Hydra Airdrop
 ====================
 
-**UPDATE** - Added a .jar tool for batch registering many IOP addresses at once, see below. Also, our Telegram CommunityBot is now accepting your registrations. The registration will be open for 7 days, until Sunday, January 14, 7 PM UTC.
+**UPDATE** - Added a .jar tool for batch registering many IOP addresses at once, see below. Also, 
 
-**UPDATE** - All snapshots and distribution calculations added. The registration will open tonight at approximately 7 PM UTC. We will keep registration open for a week, so everyone has plenty of time to claim their tokens.
+**UPDATE** - All snapshots and distribution calculations added. Our Telegram CommunityBot is now accepting your registrations. The registration will be open for 7 days, until Sunday, January 14, 7 PM UTC, so everyone has plenty of time to claim their tokens. We also added a .jar tool for batch registering all IOP addresses in your IoP Core wallet at once.
 
 Dear IOP Community,
 
