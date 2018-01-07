@@ -1,7 +1,7 @@
 Second Hydra Airdrop
 ====================
 
-**UPDATE** - All snapshots and distribution calculations added. The registration will open as planned at 2 PM UTC. 
+**UPDATE** - All snapshots and distribution calculations added. The registration will open tonight at approximately 7 PM UTC.
 
 Dear IOP Community,
 
@@ -81,7 +81,7 @@ If you still have questions, you should be able to find the answers here.
 - From January 1 to January 7: Snapshots for round 2, always at the first block after midnight UTC. 
 - January 2: Release of the snapshot results for round 1. You can start to compare your addresses.
 - January 7: Release of the snapshot results for round 2. Release of the full mathematical details on the distribution function for transparency.
-- From January 7 to January 14: Register your addresses with the bot in our official [Telegram Channel](https://t.me/IoPofficial) (starting and closing at 2 PM UTC, respectively).
+- From January 7 to January 14: Register your addresses with the bot in our official [Telegram Channel](https://t.me/IoPofficial) (starting and closing at 7 PM UTC, respectively).
 - After January 14: Hydras will be sent out to all registered participants.
 
 
