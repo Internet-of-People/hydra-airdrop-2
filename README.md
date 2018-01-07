@@ -1,7 +1,7 @@
 Second Hydra Airdrop
 ====================
 
-**UPDATE** - All snapshots and distribution calculations added
+**UPDATE** - All snapshots and distribution calculations added. The registration will open as planned at 2 PM UTC.
 
 Dear IOP Community,
 
