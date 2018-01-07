@@ -36,7 +36,7 @@ Our first airdrop was held as a lottery to give owners of smaller wallets a chan
 
 ![Hydra Airdrop distribution function](src/img/distribution.png)
 
-After all shares have been distributed, we calculate the total number of shares and adjust the number of HYD tokens per share accordingly. The two rounds are calculated separately. You can see the amount of HYD tokens each address won [here](src/data/combined/hydras.json).
+After all shares have been distributed, we calculate the total number of shares and adjust the number of HYD tokens per share accordingly. In the first round, about 2146253.5 shares have been awarded, leading to 0.116 HYD tokens per share. In the second round, 2204296.6 shares have been awarded, leading to 0.113 HYD tokens per share. The two rounds are calculated separately. You can see the amount of HYD tokens each address won [here](src/data/combined/hydras.json).
 
 I received fewer Hydras than expected
 =====================================
