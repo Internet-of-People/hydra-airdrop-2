@@ -1,6 +1,8 @@
 Second Hydra Airdrop
 ====================
 
+**UPDATE** - All snapshots and distribution calculations added
+
 Dear IOP Community,
 
 Initially we planned to open registration for the second airdrop of Hydra tokens on Monday, January 1, 2:00 PM UTC. Due to the large amount of new members during the Christmas period and the increased demand for another airdrop, we have decided to extend this airdrop by adding a second round. The rewards for both rounds can be claimed together on January 7, 2:00 PM UTC. 
@@ -23,6 +25,12 @@ Distribution Method
 We will monitor the blockchain over a period of seven days, using 7 snapshots taken from the first block after midnight each day. Addresses enter the airdrop using the balance they held for at least 4 of the 7 snapshots. The intent behind this method is to reward people who see IOP as a project worth of long-term investment.
 
 Our first airdrop was held as a lottery to give owners of smaller wallets a chance to win more Hydras; however, this time we want to reward the people who have put their trust into our ecosystem, people who share our vision of people interacting and cooperating freely. For this reason we have chosen a distribution function that rewards addresses with mid-range balances more than addresses with low or very high balances. An address is eligible for the airdrop if it contains more than 1 IOP. The exact details will only be revealed during the second round of airdropping to prevent people from trying to game the system. However, if you have a lot of small change laying around in your wallet, we recommend sending it all to yourself in a single large transaction.
+
+**UPDATE** Now that all snapshots are done, we are revealing our distribution function. It is described by
+`XXXXX` and is shown in the following graphic. As you can see, addresses with a balance from 100 IOP to 10,000 IOP are preferred in this airdrop, while addresses with a balance outside this range are slighty penalized. 
+
+![Hydra Airdrop distribution function](src/img/distribution.png)
+
 
 I received fewer Hydras than expected
 =====================================
