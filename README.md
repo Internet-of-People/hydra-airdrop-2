@@ -27,10 +27,11 @@ We will monitor the blockchain over a period of seven days, using 7 snapshots ta
 Our first airdrop was held as a lottery to give owners of smaller wallets a chance to win more Hydras; however, this time we want to reward the people who have put their trust into our ecosystem, people who share our vision of people interacting and cooperating freely. For this reason we have chosen a distribution function that rewards addresses with mid-range balances more than addresses with low or very high balances. An address is eligible for the airdrop if it contains more than 1 IOP. The exact details will only be revealed during the second round of airdropping to prevent people from trying to game the system. However, if you have a lot of small change laying around in your wallet, we recommend sending it all to yourself in a single large transaction.
 
 **UPDATE** Now that all snapshots are done, we are revealing our distribution function. It is described by
-`XXXXX` and is shown in the following graphic. As you can see, addresses with a balance from 100 IOP to 10,000 IOP are preferred in this airdrop, while addresses with a balance outside this range are slighty penalized. 
+`shares(coins) = 100^( arctan( (log10(coins)/2 - 1) * pi/2 ) + 1 )` and is shown in the following graphic. As you can see, addresses with a balance from 100 IOP to 10,000 IOP are preferred in this airdrop, while addresses with a balance outside this range are slighty penalized. 
 
 ![Hydra Airdrop distribution function](src/img/distribution.png)
 
+After all shares have been distributed, we calculate the total number of shares and adjust the number of HYD tokens per share accordingly. The two rounds are calculated separately. You can see the amount of HYD tokens won [here](src/data/combined/hydras.json).
 
 I received fewer Hydras than expected
 =====================================
