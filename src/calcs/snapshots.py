@@ -2,8 +2,6 @@
 
 import numpy as np
 import json
-import random # Mersenne Twister
-import matplotlib.pyplot as plt
 from collections import OrderedDict
 import argparse
 
@@ -16,12 +14,12 @@ args = parser.parse_args()
 if args.round == 1:
     # Input
     raw_files = ['../data/raw/snapshot_2017-12-25_00_02.dat',
-                '../data/raw/snapshot_2017-12-26_00_08.dat',
-                '../data/raw/snapshot_2017-12-27_00_00.dat',
-                '../data/raw/snapshot_2017-12-28_00_00.dat',
-                '../data/raw/snapshot_2017-12-29_00_59.dat',
-                '../data/raw/snapshot_2017-12-30_00_06.dat',
-                '../data/raw/snapshot_2017-12-31_00_00.dat']
+                 '../data/raw/snapshot_2017-12-26_00_08.dat',
+                 '../data/raw/snapshot_2017-12-27_00_00.dat',
+                 '../data/raw/snapshot_2017-12-28_00_00.dat',
+                 '../data/raw/snapshot_2017-12-29_00_59.dat',
+                 '../data/raw/snapshot_2017-12-30_00_06.dat',
+                 '../data/raw/snapshot_2017-12-31_00_00.dat']
     # Output
     balances_chonological_file = '../data/round1/all_balances_chronological.json'
     balances_sorted_file = '../data/round1/all_balances_sorted.json'
@@ -29,24 +27,19 @@ if args.round == 1:
     print("Processing first snapshot round...")
 elif args.round == 2:
     # Input
-    raw_files = ['../data/raw/snapshot_2017-12-25_00_02.dat',
-                '../data/raw/snapshot_2017-12-26_00_08.dat',
-                '../data/raw/snapshot_2017-12-27_00_00.dat',
-                '../data/raw/snapshot_2017-12-28_00_00.dat',
-                '../data/raw/snapshot_2017-12-29_00_59.dat',
-                '../data/raw/snapshot_2017-12-30_00_06.dat',
-                '../data/raw/snapshot_2017-12-31_00_00.dat']
+    raw_files = ['../data/raw/snapshot_2018-01-01_00_09.dat',
+                 '../data/raw/snapshot_2018-01-02_00_03.dat',
+                 '../data/raw/snapshot_2018-01-03_00_06.dat',
+                 '../data/raw/snapshot_2018-01-04_00_12.dat',
+                 '../data/raw/snapshot_2018-01-05_00_00.dat',
+                 '../data/raw/snapshot_2018-01-06_00_02.dat', 
+                 '../data/raw/snapshot_2018-01-06_00_02.dat']# TODO
 
     # Output
     balances_chonological_file = '../data/round2/all_balances_chronological.json'
     balances_sorted_file = '../data/round2/all_balances_sorted.json'
     balances_eligible_file = '../data/round2/balances_eligible.json'
     print("Processing second snapshot round...")
-
-
-
-
-
 
 nSnaps = len(raw_files)
 
