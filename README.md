@@ -1,15 +1,18 @@
 Second Hydra Airdrop
 ====================
 
-**UPDATE** - All snapshots and distribution calculations added. The registration will open as planned at 2 PM UTC.
+**UPDATE** - All snapshots and distribution calculations added. The registration will open as planned at 2 PM UTC. 
 
 Dear IOP Community,
 
 Initially we planned to open registration for the second airdrop of Hydra tokens on Monday, January 1, 2:00 PM UTC. Due to the large amount of new members during the Christmas period and the increased demand for another airdrop, we have decided to extend this airdrop by adding a second round. The rewards for both rounds can be claimed together on January 7, 2:00 PM UTC. 
 
-The first round began with the first block after midnight on December 25 (UTC) and ended with the first block after midnight on December 31. The second round began with the first block after midnight on January 1 (UTC) and will end with the first block after midnight on January 7.
+The first round began with the first block after midnight on December 25 (UTC) and ended with the first block after midnight on December 31. The second round began with the first block after midnight on January 1 (UTC) and ended with the first block after midnight on January 7.
 
-This time, each eligible address will be awarded a fixed amount of Hydra, which will be predetermined during the two rounds mentioned above. An address is eligible for the airdrop if it contains more than 1 IOP. Details on the distribution method are given below. To claim your Hydra, please follow the instructions below. Unclaimed Hydra will be saved for distribution in the next airdrop.
+This time, each eligible address was awarded a fixed amount of Hydra, which has been determined during the two rounds mentioned above. An address is eligible for the airdrop if it contained more than 1 IOP for more than half of one of the snapshot phases. Details on the distribution method are given below. 
+
+In the first round, 1621 addresses held an eligible balance, while in the second round, this figure increased to 1683. Of those eligible, no address was awareded less than 0.1 HYD per round, and no address was awarded more than 3335 HYD per round. To claim your Hydra, please follow the instructions below. Unclaimed Hydra will be saved for distribution in the next airdrop.
+
 
 Claiming HYD Tokens
 ===================
@@ -20,23 +23,25 @@ The command used for claiming an IOP address is `/%register YOUR_IOP_ADDRESS YOU
 
 A very helpful video has already been uploaded to our official Internet of People YouTube Channel, explaining how to [register for the first Hydra Airdrop](https://youtu.be/hvMySKfQZ7Q). The procedure is exactly the same for the second airdrop. The only difference is that the second airdrop is not a lottery, so the amount of tokens is already fixed when you register.
 
+We are also in the process of creating a command line tool that communicates directly with your IoP Core Wallet to register all of your eligible addresses. It can be found [here](src/register/jar). Further instructions will follow.
+
 Distribution Method
 ===================
-We will monitor the blockchain over a period of seven days, using 7 snapshots taken from the first block after midnight each day. Addresses enter the airdrop using the balance they held for at least 4 of the 7 snapshots. The intent behind this method is to reward people who see IOP as a project worth of long-term investment.
+We monitored the blockchain twice, each time over a period of seven days, using 7 snapshots taken from the first block after midnight each day. Addresses enter the airdrop using the balance they held for at least 4 of the 7 snapshots. The intent behind this method is to reward people who see IOP as a project worth of long-term investment.
 
 Our first airdrop was held as a lottery to give owners of smaller wallets a chance to win more Hydras; however, this time we want to reward the people who have put their trust into our ecosystem, people who share our vision of people interacting and cooperating freely. For this reason we have chosen a distribution function that rewards addresses with mid-range balances more than addresses with low or very high balances. An address is eligible for the airdrop if it contains more than 1 IOP. The exact details will only be revealed during the second round of airdropping to prevent people from trying to game the system. However, if you have a lot of small change laying around in your wallet, we recommend sending it all to yourself in a single large transaction.
 
 **UPDATE** Now that all snapshots are done, we are revealing our distribution function. It is described by
-`shares(coins) = 100^( arctan( (log10(coins)/2 - 1) * pi/2 ) + 1 )` and is shown in the following graphic. As you can see, addresses with a balance from 100 IOP to 10,000 IOP are preferred in this airdrop, while addresses with a balance outside this range are slighty penalized. 
+`shares(coins) = 100^( arctan( (log10(coins)/2 - 1) * pi/2 ) + 1 )` and is shown in the following graphic. As you can see, addresses with a balance from 100 IOP to 10,000 IOP are slightly preferred in this airdrop, while addresses with a balance outside this range are increasingly penalized the further they are from the given range.
 
 ![Hydra Airdrop distribution function](src/img/distribution.png)
 
-After all shares have been distributed, we calculate the total number of shares and adjust the number of HYD tokens per share accordingly. The two rounds are calculated separately. You can see the amount of HYD tokens won [here](src/data/combined/hydras.json).
+After all shares have been distributed, we calculate the total number of shares and adjust the number of HYD tokens per share accordingly. The two rounds are calculated separately. You can see the amount of HYD tokens each address won [here](src/data/combined/hydras.json).
 
 I received fewer Hydras than expected
 =====================================
 
-If you find an address is credited with fewer Hydras than expected, please remember that your wallet generates change addresses every time you send a transaction. See [this article](https://iop.global/change-addresses/) for more information. Depending on their balance during the snapshot phases, these addresses might also be eligible. You can get a list of all addresses in your wallet--including change addresses--by running `listaddressgroupings` in the console found in your IoP Core Wallet under *Help->Debug Window->Console*. To find out which of these is eligible for registration, you can compare them against the snapshot data [here](src/data/round1/balances_eligible.json). 
+If you find an address is credited with fewer Hydras than expected, please remember that your wallet generates change addresses every time you send a transaction. See [this article](https://iop.global/change-addresses/) for more information. Depending on their balance during the snapshot phases, these addresses might also be eligible. You can get a list of all addresses in your wallet--including change addresses--by running `listaddressgroupings` in the console found in your IoP Core Wallet under *Help->Debug Window->Console*. To find out which of these is eligible for registration, you can compare them against the snapshot data [here](src/data/combined/hydras.json). 
 Registration will be open until Monday, January 14, 2:00 PM UTC. After registration closes, we will update this repository with the full registration data. 
 
 
@@ -94,5 +99,5 @@ If you still have questions, you should be able to find the answers here.
 **A**: We need a cryptographic signature to verify that you own the IoP address you’re trying to register. In your IoP core wallet, select “Sign Message” from the File menu. Paste the eligible IoP address in the top bar and your ETH address in the message box. Click the “Sign Message” button and the signature will be generated. You can use the Copy button to the right of the signature to copy it to the clipboard.
 
 **Q**: The bot said: “That IoP address isn't on the list of IoP addresses eligible for this airdrop. Sorry.” Why?
-**A**: First check [this list](src/data/round1/balances_eligible.json) for your address. If the balance there does not match what you think you had in that address, compare against [this list](src/data/round1/all_balances_chronological.json), where the balance for each of the snapshots is listed. Remember you need a balance of at least 1 IOP to receive Hydras, and only balances held for more than 4 days are eligible. If the address is not in the list, don’t worry. Your tokens may have been stored in a different address than you think. Go to *Help->Debug Window->Console*, enter `listaddressgroupings` and hit return. The console window will display all the addresses your wallet used for your transactions. Check that list against the first list and you should find the tokens you’re looking for.
+**A**: First check these lists for for your address: [round 1](src/data/round1/balances_eligible.json) and [round 2](src/data/round2/balances_eligible.json). If the balance there does not match what you think you had in that address, compare against these lists: [round 1](src/data/round1/all_balances_chronological.json), [round 2](src/data/round2/all_balances_chronological.json), where the balance for each of the snapshots is listed. Remember you need a balance of at least 1 IOP to receive Hydras, and only balances held for more than 4 days are eligible. If the address is not in the list, don’t worry. Your tokens may have been stored in a different address than you think. Go to *Help->Debug Window->Console*, enter `listaddressgroupings` and hit return. The console window will display all the addresses your wallet used for your transactions. Check that list against the first list and you should find the tokens you’re looking for.
 
