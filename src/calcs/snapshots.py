@@ -33,7 +33,7 @@ elif args.round == 2:
                  '../data/raw/snapshot_2018-01-04_00_12.dat',
                  '../data/raw/snapshot_2018-01-05_00_00.dat',
                  '../data/raw/snapshot_2018-01-06_00_02.dat', 
-                 '../data/raw/snapshot_2018-01-06_00_02.dat']# TODO
+                 '../data/raw/snapshot_2018-01-07_00_07.dat']
 
     # Output
     balances_chonological_file = '../data/round2/all_balances_chronological.json'
